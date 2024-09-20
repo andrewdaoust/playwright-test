@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('First test', async ({ page }) => {
   await page.goto('http://localhost:3000/');
   await page.getByRole('heading', { name: 'Todo List' }).click();
   await expect(page.getByRole('heading')).toContainText('Todo List');
